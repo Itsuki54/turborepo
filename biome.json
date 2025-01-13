@@ -1,0 +1,55 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "ignore": [".next", "node_modules"]
+  },
+  "organizeImports": { "enabled": true },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": false,
+      "correctness": {
+        "noUnusedVariables": "error",
+        "useHookAtTopLevel": "error",
+        "useJsxKeyInIterable": "error"
+      },
+      "nursery": { "noExportedImports": "error" },
+      "style": {
+        "noDefaultExport": "error",
+        "noNegationElse": "error",
+        "useBlockStatements": "off"
+      }
+    },
+    "ignore": [
+      ".next",
+      "node_modules",
+      "**/.eslintrc.js",
+      "**/.next",
+      "**/.vercel",
+      "**/node_modules",
+      "**/out",
+      "**/next.config.js",
+      "**/tailwind.config.js",
+      "**/tailwind.config.ts"
+    ]
+  },
+  "javascript": { "formatter": { "quoteStyle": "single" } },
+  "overrides": [
+    {
+      "include": ["*.ts", "*.tsx"],
+      "linter": { "rules": { "suspicious": { "noConsole": "error" } } }
+    },
+    {
+      "include": ["src/pages/**/*"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    }
+  ]
+}
