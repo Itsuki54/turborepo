@@ -1,7 +1,4 @@
 {
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ]
+  "biome.enabled": true,
+  "biome.searchInPath": true
 }
