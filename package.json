@@ -7,7 +7,9 @@
     "type-check": "turbo type-check",
     "clean": "turbo clean",
     "format": "biome format --write .",
-    "lint:fix": "biome lint --write ."
+    "lint:fix": "biome lint --write .",
+    "check": "biome check .",
+    "check:fix": "biome check --write ."
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
