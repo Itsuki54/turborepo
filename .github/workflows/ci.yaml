@@ -19,7 +19,7 @@ jobs:
       - name: Run build
         run: pnpm build
 
-  lint:
+  check:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,5 +32,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run lint
+      - name: Run check
         run: pnpm check
