@@ -3,7 +3,7 @@ name: build-check
 on: [pull_request]
 
 jobs:
-  dprint:
+  build:
     runs-on: ubuntu-latest
 
     steps:
