@@ -11,7 +11,11 @@
   "scripts": {
     "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
     "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "gen:ui": "pnpm dlx shadcn@latest add ",
+    "format": "biome format --write .",
+    "lint": "biome lint --write .",
+    "check": "biome check ."
   },
   "peerDependencies": {
     "react": "^18.2.0"
@@ -29,6 +33,7 @@
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.4",
     "@radix-ui/react-aspect-ratio": "^1.1.1",
+    "@radix-ui/react-avatar": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

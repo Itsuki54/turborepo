@@ -7,11 +7,9 @@
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "biome format --write .",
-    "lint:fix": "biome lint --write .",
-    "check": "biome check .",
-    "check:fix": "biome check --write .",
-    "generate:component": "pnpm dlx shadcn@latest add -c ./packages/ui"
+    "format": "turbo format",
+    "check": "turbo check",
+    "gen:ui": "turbo run gen:ui"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
