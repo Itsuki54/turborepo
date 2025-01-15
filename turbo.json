@@ -8,12 +8,19 @@
     },
     "lint": {},
     "type-check": {},
+    "format": {},
+    "check": {},
     "dev": {
       "cache": false,
       "persistent": true
     },
     "clean": {
       "cache": false
+    },
+    "gen:ui": {
+      "cache": false,
+      "interactive": true
     }
-  }
+  },
+  "ui": "tui"
 }

@@ -1,4 +1,5 @@
 {
+  "name": "internal-tools",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -6,19 +7,17 @@
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "biome format --write .",
-    "lint:fix": "biome lint --write .",
-    "check": "biome check .",
-    "check:fix": "biome check --write ."
+    "format": "turbo format",
+    "check": "turbo check",
+    "gen:ui": "turbo run gen:ui"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "@biomejs/biome": "1.9.4",
     "turbo": "^2.3.3"
   },
-  "packageManager": "pnpm@9.15.3",
+  "packageManager": "pnpm@9.15.4",
   "engines": {
     "node": ">=22"
-  },
-  "name": "with-tailwind"
+  }
 }

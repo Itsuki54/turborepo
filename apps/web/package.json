@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "lint": "biome lint --write .",
+    "type-check": "tsc --noEmit",
+    "format": "biome format --write .",
+    "check": "biome check ."
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
