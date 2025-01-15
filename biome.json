@@ -15,7 +15,7 @@
         "useHookAtTopLevel": "error",
         "useJsxKeyInIterable": "error"
       },
-      "nursery": { "noExportedImports": "error" },
+      "nursery": { "noExportedImports": "error", "useSortedClasses": "error" },
       "style": {
         "noDefaultExport": "error",
         "noNegationElse": "error",
