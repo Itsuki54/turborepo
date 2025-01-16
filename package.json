@@ -2,19 +2,21 @@
   "name": "internal-tools",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "pnpm with-env turbo build",
+    "dev": "pnpm with-env turbo dev",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
     "format": "turbo format",
     "check": "turbo check",
     "gen:ui": "turbo run gen:ui",
-    "prepare": "husky"
+    "prepare": "husky",
+    "with-env": "dotenv -e .env --"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@repo/typescript-config": "workspace:*",
+    "dotenv-cli": "^8.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
     "turbo": "^2.3.3"

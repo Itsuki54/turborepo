@@ -5,7 +5,21 @@
     "indentStyle": "space",
     "ignore": [".next", "node_modules"]
   },
-  "organizeImports": { "enabled": true },
+  "organizeImports": {
+    "enabled": true,
+    "ignore": [
+      ".next",
+      "node_modules",
+      "**/.eslintrc.js",
+      "**/.next",
+      "**/.vercel",
+      "**/node_modules",
+      "**/out",
+      "**/next.config.js",
+      "**/tailwind.config.js",
+      "**/tailwind.config.ts"
+    ]
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -13,7 +27,8 @@
       "correctness": {
         "noUnusedVariables": "error",
         "useHookAtTopLevel": "error",
-        "useJsxKeyInIterable": "error"
+        "useJsxKeyInIterable": "error",
+        "noUnusedImports": "error"
       },
       "nursery": {
         "noExportedImports": "error",
