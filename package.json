@@ -26,6 +26,6 @@
     "node": ">=22"
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["turbo format", "turbo lint"]
+    "*.{ts,tsx}": ["turbo format --", "turbo lint --"]
   }
 }

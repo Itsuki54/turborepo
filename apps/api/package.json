@@ -2,7 +2,8 @@
   "name": "@repo/api",
   "type": "module",
   "export": {
-    "./src/lib/hono": "./src/lib/hono.ts"
+    "./src/lib/hono": "./src/lib/hono.ts",
+    "./src/index": "./src/index.ts"
   },
   "scripts": {
     "dev": "tsx watch src/index.ts",
