@@ -16,7 +16,7 @@
     "hono": "^4.6.16"
   },
   "devDependencies": {
-    "@types/node": "20.11.24",
+    "@types/node": "20.17.14",
     "tsx": "4.19.2"
   }
 }
