@@ -12,18 +12,12 @@ generator erd {
   output   = "./docs/erd.svg"
 }
 
-generator zodPrismaTypes {
+generator zod {
   provider                  = "zod-prisma-types"
-  output                    = "./zod-prisma-types"
+  output                    = "../schema"
   createInputTypes          = false
   createRelationValuesTypes = false
   prismaClientPath          = "@prisma/client"
-}
-
-generator zodPrisma {
-  provider      = "zod-prisma"
-  relationModel = false
-  output        = "./zod-prisma"
 }
 
 model User {
