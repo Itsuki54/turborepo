@@ -8,7 +8,6 @@
     ":pinDevDependencies"
   ],
   "timezone": "Asia/Tokyo",
-  "schedule": ["after 9:00 and before 10:00 every weekday"],
   "labels": ["renovate"],
   "rebaseWhen": "never",
   "assignees": ["Itsuki54"],
