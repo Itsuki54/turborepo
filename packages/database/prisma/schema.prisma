@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator erd {
+  provider = "prisma-erd-generator"
+  output   = "./docs/erd.svg"
+}
+
+generator zod {
+  provider                  = "zod-prisma-types"
+  output                    = "../schema"
+  createInputTypes          = false
+  createRelationValuesTypes = false
+  prismaClientPath          = "@prisma/client"
+}
+
+model User {
+  id     String   @id @default(cuid())
+  email  String   @unique
+  name   String?
+  Report Report[]
+}
+
+model Report {
+  id        String   @id @default(cuid())
+  title     String
+  content   String
+  author    User     @relation(fields: [authorId], references: [id])
+  authorId  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
