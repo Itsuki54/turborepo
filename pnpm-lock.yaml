@@ -37,8 +37,8 @@ importers:
         version: 4.6.16
     devDependencies:
       '@types/node':
-        specifier: ^20.11.17
-        version: 20.11.24
+        specifier: ^20.17.14
+        version: 20.17.14
       tsx:
         specifier: ^4.7.1
         version: 4.19.2
@@ -68,8 +68,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/config-typescript
       '@types/node':
-        specifier: ^20.11.24
-        version: 20.11.24
+        specifier: ^20.17.14
+        version: 20.17.14
       '@types/react':
         specifier: ^18.2.61
         version: 18.2.61
@@ -181,8 +181,8 @@ importers:
         specifier: workspace:*
         version: link:../config-typescript
       '@types/node':
-        specifier: ^20.11.24
-        version: 20.11.24
+        specifier: ^20.17.14
+        version: 20.17.14
       '@types/react':
         specifier: ^18.2.61
         version: 18.2.61
@@ -1121,8 +1121,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@20.11.24':
-    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
+  '@types/node@20.17.14':
+    resolution: {integrity: sha512-w6qdYetNL5KRBiSClK/KWai+2IMEJuAj+EujKCumalFOwXtvOXaEan9AuwcRID2IcOIAWSIfR495hBtgKlx2zg==}
 
   '@types/node@22.10.7':
     resolution: {integrity: sha512-V09KvXxFiutGp6B7XkpaDXlNadZxrzajcY50EuoLIpQ6WWYCSvf19lVIazzfIzQvhUN2HjX12spLojTnhuKlGg==}
@@ -2597,8 +2597,8 @@ packages:
   unbzip2-stream@1.4.3:
     resolution: {integrity: sha512-mlExGW4w71ebDJviH16lQLtZS32VKqsSfk80GCfUlwT/4/hNRFsoscrF/c++9xinkMzECL1uL9DDwXqFWkruPg==}
 
-  undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
   undici-types@6.20.0:
     resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
@@ -3374,9 +3374,9 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@20.11.24':
+  '@types/node@20.17.14':
     dependencies:
-      undici-types: 5.26.5
+      undici-types: 6.19.8
 
   '@types/node@22.10.7':
     dependencies:
@@ -3400,7 +3400,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 20.11.24
+      '@types/node': 22.10.7
     optional: true
 
   agent-base@6.0.2:
@@ -4992,7 +4992,7 @@ snapshots:
       buffer: 5.7.1
       through: 2.3.8
 
-  undici-types@5.26.5: {}
+  undici-types@6.19.8: {}
 
   undici-types@6.20.0: {}
 
