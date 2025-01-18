@@ -9,7 +9,9 @@
   ],
   "timezone": "Asia/Tokyo",
   "labels": ["renovate"],
-  "rebaseWhen": "never",
   "assignees": ["Itsuki54"],
-  "reviewers": ["Itsuki54"]
+  "reviewers": ["Itsuki54"],
+  "automerge": true,
+  "automergeType": "pr",
+  "rebaseWhen": "automerging"
 }
