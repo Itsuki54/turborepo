@@ -10,15 +10,9 @@ import { z } from 'zod';
 
 export const TransactionIsolationLevelSchema = z.enum(['Serializable']);
 
-export const UserScalarFieldEnumSchema = z.enum([
-  'id',
-  'email',
-  'name',
-  'createdAt',
-  'updatedAt',
-]);
+export const UserScalarFieldEnumSchema = z.enum(['id', 'email', 'name']);
 
-export const PostScalarFieldEnumSchema = z.enum([
+export const ReportScalarFieldEnumSchema = z.enum([
   'id',
   'title',
   'content',
@@ -42,17 +36,15 @@ export const UserSchema = z.object({
   id: z.string().cuid(),
   email: z.string(),
   name: z.string().nullable(),
-  createdAt: z.coerce.date(),
-  updatedAt: z.coerce.date(),
 });
 
 export type User = z.infer<typeof UserSchema>;
 
 /////////////////////////////////////////
-// POST SCHEMA
+// REPORT SCHEMA
 /////////////////////////////////////////
 
-export const PostSchema = z.object({
+export const ReportSchema = z.object({
   id: z.string().cuid(),
   title: z.string(),
   content: z.string(),
@@ -61,4 +53,4 @@ export const PostSchema = z.object({
   updatedAt: z.coerce.date(),
 });
 
-export type Post = z.infer<typeof PostSchema>;
+export type Report = z.infer<typeof ReportSchema>;

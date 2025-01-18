@@ -21,16 +21,13 @@ generator zod {
 }
 
 model User {
-  id        String   @id @default(cuid())
-  email     String   @unique
-  name      String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  Post Post[]
+  id     String   @id @default(cuid())
+  email  String   @unique
+  name   String?
+  Report Report[]
 }
 
-model Post {
+model Report {
   id        String   @id @default(cuid())
   title     String
   content   String
