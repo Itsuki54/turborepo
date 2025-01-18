@@ -16,16 +16,17 @@
     "studio": "prisma studio"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.10.7",
     "prisma": "6.1.0",
+    "prisma-erd-generator": "^1.11.2",
+    "tsup": "^8.0.2",
     "tsx": "^4.7.1",
     "typescript": "5.5.4",
-    "zod-prisma-types": "^3.2.1",
-    "prisma-erd-generator": "^1.11.2"
+    "zod-prisma-types": "^3.2.1"
   },
   "dependencies": {
-    "@faker-js/faker": "^9.4.0",
     "@prisma/client": "6.1.0",
     "zod": "^3.24.1"
   }
