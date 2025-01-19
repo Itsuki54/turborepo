@@ -10,7 +10,6 @@
   "timezone": "Asia/Tokyo",
   "labels": ["renovate"],
   "assignees": ["Itsuki54"],
-  "reviewers": ["Itsuki54"],
   "automerge": true,
   "automergeType": "pr",
   "rebaseWhen": "automerging"
