@@ -3,22 +3,35 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "ignore": [".next", "node_modules"]
-  },
-  "organizeImports": {
-    "enabled": true,
     "ignore": [
+      "**/dist",
       ".next",
       "node_modules",
-      "**/.eslintrc.js",
       "**/.next",
       "**/.vercel",
       "**/node_modules",
-      "**/out",
+      "**/next.config.ts",
       "**/next.config.js",
       "**/tailwind.config.js",
-      "**/tailwind.config.ts"
+      "**/tailwind.config.ts",
+      "**/*.js"
     ]
+  },
+  "organizeImports": {
+    "ignore": [
+      "**/dist",
+      ".next",
+      "node_modules",
+      "**/.next",
+      "**/.vercel",
+      "**/node_modules",
+      "**/next.config.ts",
+      "**/next.config.js",
+      "**/tailwind.config.js",
+      "**/tailwind.config.ts",
+      "**/*.js"
+    ],
+    "enabled": true
   },
   "linter": {
     "enabled": true,
@@ -41,16 +54,17 @@
       }
     },
     "ignore": [
+      "**/dist",
       ".next",
       "node_modules",
-      "**/.eslintrc.js",
       "**/.next",
       "**/.vercel",
       "**/node_modules",
-      "**/out",
+      "**/next.config.ts",
       "**/next.config.js",
       "**/tailwind.config.js",
-      "**/tailwind.config.ts"
+      "**/tailwind.config.ts",
+      "**/*.js"
     ]
   },
   "javascript": { "formatter": { "quoteStyle": "single" } },
@@ -60,7 +74,7 @@
       "linter": { "rules": { "suspicious": { "noConsole": "error" } } }
     },
     {
-      "include": ["src/pages/**/*"],
+      "include": ["src/pages/**/*", "src/app/**/*"],
       "linter": {
         "rules": {
           "style": {
