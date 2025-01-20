@@ -37,8 +37,8 @@ importers:
         version: 4.6.17
     devDependencies:
       '@types/node':
-        specifier: 20.17.14
-        version: 20.17.14
+        specifier: 22.10.7
+        version: 22.10.7
       tsx:
         specifier: 4.19.2
         version: 4.19.2
@@ -68,8 +68,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/config-typescript
       '@types/node':
-        specifier: 20.17.14
-        version: 20.17.14
+        specifier: 22.10.7
+        version: 22.10.7
       '@types/react':
         specifier: 18.3.18
         version: 18.3.18
@@ -181,8 +181,8 @@ importers:
         specifier: workspace:*
         version: link:../config-typescript
       '@types/node':
-        specifier: 20.17.14
-        version: 20.17.14
+        specifier: 22.10.7
+        version: 22.10.7
       '@types/react':
         specifier: 18.3.18
         version: 18.3.18
@@ -1117,9 +1117,6 @@ packages:
 
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
-
-  '@types/node@20.17.14':
-    resolution: {integrity: sha512-w6qdYetNL5KRBiSClK/KWai+2IMEJuAj+EujKCumalFOwXtvOXaEan9AuwcRID2IcOIAWSIfR495hBtgKlx2zg==}
 
   '@types/node@22.10.7':
     resolution: {integrity: sha512-V09KvXxFiutGp6B7XkpaDXlNadZxrzajcY50EuoLIpQ6WWYCSvf19lVIazzfIzQvhUN2HjX12spLojTnhuKlGg==}
@@ -2539,9 +2536,6 @@ packages:
   unbzip2-stream@1.4.3:
     resolution: {integrity: sha512-mlExGW4w71ebDJviH16lQLtZS32VKqsSfk80GCfUlwT/4/hNRFsoscrF/c++9xinkMzECL1uL9DDwXqFWkruPg==}
 
-  undici-types@6.19.8:
-    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
-
   undici-types@6.20.0:
     resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
@@ -3309,10 +3303,6 @@ snapshots:
       '@types/unist': 2.0.11
 
   '@types/ms@2.1.0': {}
-
-  '@types/node@20.17.14':
-    dependencies:
-      undici-types: 6.19.8
 
   '@types/node@22.10.7':
     dependencies:
@@ -4864,8 +4854,6 @@ snapshots:
     dependencies:
       buffer: 5.7.1
       through: 2.3.8
-
-  undici-types@6.19.8: {}
 
   undici-types@6.20.0: {}
 
