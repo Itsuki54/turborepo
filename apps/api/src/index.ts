@@ -4,7 +4,7 @@ import { handle } from 'hono/vercel';
 
 const app = new Hono().basePath('/api');
 
-const route = app.get('/', (c) => {
+export const route = app.get('/', (c) => {
   return c.json({ text: 'Hello, World!' });
 });
 
