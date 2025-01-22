@@ -4,44 +4,42 @@
     "enabled": true,
     "indentStyle": "space",
     "ignore": [
-      "**/dist",
-      ".next",
-      "node_modules",
-      "**/.next",
-      "**/.vercel",
-      "**/node_modules",
+      "**/coverage/**",
+      "**/dist/**",
+      "**/.next/**",
+      "**/.vercel/**",
+      "**/node_modules/**",
+      "*.html",
+      "*.css",
+      "*.js",
       "**/next.config.ts",
-      "**/next.config.js",
-      "**/tailwind.config.js",
-      "**/tailwind.config.ts",
-      "**/*.js"
+      "**/tailwind.config.ts"
     ]
   },
   "organizeImports": {
+    "enabled": true,
     "ignore": [
-      "**/dist",
-      ".next",
-      "node_modules",
-      "**/.next",
-      "**/.vercel",
-      "**/node_modules",
+      "**/coverage/**",
+      "**/dist/**",
+      "**/.next/**",
+      "**/.vercel/**",
+      "**/node_modules/**",
+      "*.html",
+      "*.css",
+      "*.js",
       "**/next.config.ts",
-      "**/next.config.js",
-      "**/tailwind.config.js",
-      "**/tailwind.config.ts",
-      "**/*.js"
-    ],
-    "enabled": true
+      "**/tailwind.config.ts"
+    ]
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": false,
       "correctness": {
+        "noUnusedImports": "error",
         "noUnusedVariables": "error",
         "useHookAtTopLevel": "error",
-        "useJsxKeyInIterable": "error",
-        "noUnusedImports": "error"
+        "useJsxKeyInIterable": "error"
       },
       "nursery": {
         "noExportedImports": "error",
@@ -50,21 +48,27 @@
       "style": {
         "noDefaultExport": "error",
         "noNegationElse": "error",
-        "useBlockStatements": "off"
+        "useBlockStatements": "off",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "requireAscii": true,
+            "filenameCases": ["kebab-case"]
+          }
+        }
       }
     },
     "ignore": [
-      "**/dist",
-      ".next",
-      "node_modules",
-      "**/.next",
-      "**/.vercel",
-      "**/node_modules",
+      "**/coverage/**",
+      "**/dist/**",
+      "**/.next/**",
+      "**/.vercel/**",
+      "**/node_modules/**",
+      "*.html",
+      "*.css",
+      "*.js",
       "**/next.config.ts",
-      "**/next.config.js",
-      "**/tailwind.config.js",
-      "**/tailwind.config.ts",
-      "**/*.js"
+      "**/tailwind.config.ts"
     ]
   },
   "javascript": { "formatter": { "quoteStyle": "single" } },
@@ -75,13 +79,7 @@
     },
     {
       "include": ["src/pages/**/*", "src/app/**/*"],
-      "linter": {
-        "rules": {
-          "style": {
-            "noDefaultExport": "off"
-          }
-        }
-      }
+      "linter": { "rules": { "style": { "noDefaultExport": "off" } } }
     }
   ]
 }
