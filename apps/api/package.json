@@ -8,7 +8,7 @@
   "types": "vitest/globals",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "lint": "biome lint --write .",
+    "lint": "biome lint --write . && biome lint .",
     "format": "biome format --write .",
     "check": "biome check .",
     "test": "vitest",
@@ -20,7 +20,7 @@
     "hono": "^4.6.16"
   },
   "devDependencies": {
-    "@types/node": "22.10.7",
+    "@types/node": "22.10.8",
     "tsx": "4.19.2",
     "vitest": "^3.0.2",
     "@vitest/coverage-v8": "^3.0.2",

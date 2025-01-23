@@ -12,13 +12,13 @@
     "dev": "tsup src/* --watch",
     "format": "prisma format && biome format --write .",
     "db:generate": "prisma generate",
-    "lint": "biome lint --write .",
+    "lint": "biome lint --write . && biome lint .",
     "studio": "prisma studio"
   },
   "devDependencies": {
     "@faker-js/faker": "9.4.0",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "22.10.7",
+    "@types/node": "22.10.8",
     "prisma": "6.2.1",
     "prisma-erd-generator": "1.11.2",
     "tsup": "8.3.5",

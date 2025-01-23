@@ -3,71 +3,90 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
+    "formatWithErrors": true,
     "ignore": [
-      "**/dist",
-      ".next",
-      "node_modules",
-      "**/.next",
-      "**/.vercel",
-      "**/node_modules",
-      "**/next.config.ts",
-      "**/next.config.js",
-      "**/tailwind.config.js",
-      "**/tailwind.config.ts",
-      "**/*.js"
+      "**/coverage/**",
+      "**/dist/**",
+      "**/.next/**",
+      "**/.vercel/**",
+      "**/node_modules/**",
+      "*.html",
+      "*.css",
+      "*.js"
     ]
   },
   "organizeImports": {
+    "enabled": true,
     "ignore": [
-      "**/dist",
-      ".next",
-      "node_modules",
-      "**/.next",
-      "**/.vercel",
-      "**/node_modules",
-      "**/next.config.ts",
-      "**/next.config.js",
-      "**/tailwind.config.js",
-      "**/tailwind.config.ts",
-      "**/*.js"
-    ],
-    "enabled": true
+      "**/coverage/**",
+      "**/dist/**",
+      "**/.next/**",
+      "**/.vercel/**",
+      "**/node_modules/**",
+      "*.html",
+      "*.css",
+      "*.js"
+    ]
   },
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": false,
+      "recommended": true,
       "correctness": {
+        "noUnusedImports": "error",
         "noUnusedVariables": "error",
         "useHookAtTopLevel": "error",
-        "useJsxKeyInIterable": "error",
-        "noUnusedImports": "error"
+        "useJsxKeyInIterable": "error"
+      },
+      "complexity": {
+        "noUselessStringConcat": "error",
+        "noUselessUndefinedInitialization": "error",
+        "noVoid": "error",
+        "useArrowFunction": "error"
       },
       "nursery": {
         "noExportedImports": "error",
-        "useSortedClasses": "error"
+        "useSortedClasses": "error",
+        "noHeadElement": "error",
+        "noImgElement": "error"
       },
       "style": {
         "noDefaultExport": "error",
         "noNegationElse": "error",
-        "useBlockStatements": "off"
+        "useBlockStatements": "off",
+        "useFragmentSyntax": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "requireAscii": true,
+            "strictCase": true,
+            "filenameCases": ["kebab-case"]
+          }
+        }
+      },
+      "suspicious": {
+        "noCommentText": "error"
       }
     },
     "ignore": [
-      "**/dist",
-      ".next",
-      "node_modules",
-      "**/.next",
-      "**/.vercel",
-      "**/node_modules",
-      "**/next.config.ts",
-      "**/next.config.js",
-      "**/tailwind.config.js",
-      "**/tailwind.config.ts",
-      "**/*.js"
+      "**/coverage/**",
+      "**/dist/**",
+      "**/.next/**",
+      "**/.vercel/**",
+      "**/node_modules/**",
+      "*.html",
+      "*.css",
+      "*.js",
+      "*.config.*",
+      "$path.ts"
     ]
   },
-  "javascript": { "formatter": { "quoteStyle": "single" } },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "single"
+    }
+  },
   "overrides": [
     {
       "include": ["*.ts", "*.tsx"],
@@ -75,13 +94,7 @@
     },
     {
       "include": ["src/pages/**/*", "src/app/**/*"],
-      "linter": {
-        "rules": {
-          "style": {
-            "noDefaultExport": "off"
-          }
-        }
-      }
+      "linter": { "rules": { "style": { "noDefaultExport": "off" } } }
     }
   ]
 }
