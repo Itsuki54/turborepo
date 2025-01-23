@@ -12,7 +12,7 @@
     "dev": "tsup src/* --watch",
     "format": "prisma format && biome format --write .",
     "db:generate": "prisma generate",
-    "lint": "biome lint --write .",
+    "lint": "biome lint --write . && biome lint .",
     "studio": "prisma studio"
   },
   "devDependencies": {

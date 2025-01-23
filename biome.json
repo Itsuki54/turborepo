@@ -3,6 +3,7 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
+    "formatWithErrors": true,
     "ignore": [
       "**/coverage/**",
       "**/dist/**",
@@ -11,9 +12,7 @@
       "**/node_modules/**",
       "*.html",
       "*.css",
-      "*.js",
-      "**/next.config.ts",
-      "**/tailwind.config.ts"
+      "*.js"
     ]
   },
   "organizeImports": {
@@ -26,36 +25,47 @@
       "**/node_modules/**",
       "*.html",
       "*.css",
-      "*.js",
-      "**/next.config.ts",
-      "**/tailwind.config.ts"
+      "*.js"
     ]
   },
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": false,
+      "recommended": true,
       "correctness": {
         "noUnusedImports": "error",
         "noUnusedVariables": "error",
         "useHookAtTopLevel": "error",
         "useJsxKeyInIterable": "error"
       },
+      "complexity": {
+        "noUselessStringConcat": "error",
+        "noUselessUndefinedInitialization": "error",
+        "noVoid": "error",
+        "useArrowFunction": "error"
+      },
       "nursery": {
         "noExportedImports": "error",
-        "useSortedClasses": "error"
+        "useSortedClasses": "error",
+        "noHeadElement": "error",
+        "noImgElement": "error"
       },
       "style": {
         "noDefaultExport": "error",
         "noNegationElse": "error",
         "useBlockStatements": "off",
+        "useFragmentSyntax": "error",
         "useFilenamingConvention": {
           "level": "error",
           "options": {
             "requireAscii": true,
+            "strictCase": true,
             "filenameCases": ["kebab-case"]
           }
         }
+      },
+      "suspicious": {
+        "noCommentText": "error"
       }
     },
     "ignore": [
@@ -67,11 +77,16 @@
       "*.html",
       "*.css",
       "*.js",
-      "**/next.config.ts",
-      "**/tailwind.config.ts"
+      "*.config.*",
+      "$path.ts"
     ]
   },
-  "javascript": { "formatter": { "quoteStyle": "single" } },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "single"
+    }
+  },
   "overrides": [
     {
       "include": ["*.ts", "*.tsx"],

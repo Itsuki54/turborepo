@@ -15,7 +15,7 @@
     "type-check": "tsc --noEmit",
     "gen:ui": "pnpm dlx shadcn@latest add ",
     "format": "biome format --write .",
-    "lint": "biome lint --write .",
+    "lint": "biome lint --write . && biome lint .",
     "check": "biome check ."
   },
   "peerDependencies": {

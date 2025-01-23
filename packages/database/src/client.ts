@@ -4,8 +4,9 @@ declare global {
   var prisma: PrismaClient | undefined;
 }
 
-const prisma = global.prisma || new PrismaClient();
+const prismaClient = global.prisma || new PrismaClient();
 
-if (process.env['NODE_ENV'] === 'development') global.prisma = prisma;
+// biome-ignore lint/complexity/useLiteralKeys: <explanation>
+if (process.env['NODE_ENV'] === 'development') global.prisma = prismaClient;
 
-export const db = prisma;
+export const db = prismaClient;
