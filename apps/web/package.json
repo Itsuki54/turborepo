@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --noEmit",
-    "lint": "biome lint --write . && biome lint .",
+    "lint": "biome lint --write . && eslint . --fix",
     "format": "biome format --write .",
     "check": "biome check ."
   },
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@repo/eslint": "workspace:*",
     "@types/node": "22.10.9",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
