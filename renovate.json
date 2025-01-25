@@ -10,6 +10,7 @@
   "timezone": "Asia/Tokyo",
   "labels": ["renovate"],
   "assignees": ["Itsuki54"],
+  "matchUpdateTypes": ["minor", "patch"],
   "automerge": true,
   "automergeType": "pr",
   "rebaseWhen": "automerging"
