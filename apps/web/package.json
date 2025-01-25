@@ -9,7 +9,7 @@
     "type-check": "tsc --noEmit",
     "lint": "biome lint --write . && eslint --fix",
     "format": "biome format --write .",
-    "quolity": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
+    "quality": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
     "test": "vitest run",
     "test:cov": "vitest --coverage",
     "test:ui": "vitest --ui"

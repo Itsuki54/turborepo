@@ -16,7 +16,7 @@
     "gen:ui": "pnpm dlx shadcn@latest add ",
     "format": "biome format --write .",
     "lint": "biome lint --write .",
-    "quolity": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
+    "quality": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
     "test": "vitest run",
     "test:cov": "vitest --coverage",
     "test:ui": "vitest --ui"
