@@ -11,6 +11,9 @@ const Page = ({
       <h1 className='font-bold text-6xl'>{text}</h1>
       <div className='mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left'>
         <Button className='lg:col-span-2'>Button</Button>
+        <a className='lg:col-span-2' href='https://nextjs.org/docs'>
+          Documentation
+        </a>
       </div>
     </main>
   );

@@ -15,6 +15,7 @@ module.exports = {
     '@next/eslint-plugin-next',
     'prefer-arrow-functions',
     'import',
+     'jsx-a11y'
   ],
   extends: [
     'eslint:recommended',
@@ -48,7 +49,6 @@ module.exports = {
   2,
   { "namedComponents": "arrow-function" }
 ]
-
   },
   "overrides": [
     {

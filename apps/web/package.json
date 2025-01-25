@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --noEmit",
-    "lint": "biome lint --write . && eslint . --fix",
+    "lint": "biome lint . && eslint .",
     "format": "biome format --write .",
     "check": "biome check ."
   },
