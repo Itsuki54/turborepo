@@ -11,7 +11,7 @@
     "lint": {},
     "type-check": {},
     "format": {},
-    "quolity": {},
+    "quality": {},
     "test": {},
     "test:cov": {},
     "dev": {
