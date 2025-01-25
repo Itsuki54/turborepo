@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --noEmit",
-    "lint": "biome lint --write . && biome lint .",
+    "lint": "biome lint --write . && eslint --fix",
     "format": "biome format --write .",
-    "check": "biome check .",
-    "test": "vitest",
+    "quolity": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
+    "test": "vitest run",
     "test:cov": "vitest --coverage",
     "test:ui": "vitest --ui"
   },
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@repo/eslint": "workspace:*",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.2.0",
     "@types/node": "22.10.10",

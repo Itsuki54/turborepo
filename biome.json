@@ -10,9 +10,7 @@
       "**/.next/**",
       "**/.vercel/**",
       "**/node_modules/**",
-      "*.html",
-      "*.css",
-      "*.js"
+      "*.html"
     ]
   },
   "organizeImports": {

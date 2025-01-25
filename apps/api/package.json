@@ -8,10 +8,11 @@
   "types": "vitest/globals",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "lint": "biome lint --write . && biome lint .",
+    "type-check": "tsc --noEmit",
+    "lint": "biome lint --write .",
     "format": "biome format --write .",
-    "check": "biome check .",
-    "test": "vitest",
+    "quolity": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
+    "test": "vitest run",
     "test:cov": "vitest --coverage",
     "test:ui": "vitest --ui"
   },

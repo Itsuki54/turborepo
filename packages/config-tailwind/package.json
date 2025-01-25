@@ -5,6 +5,11 @@
   "exports": {
     ".": "./tailwind.config.ts"
   },
+  "scripts": {
+    "format": "biome format --write .",
+    "lint": "biome lint --write . && eslint --fix",
+    "quolity": "pnpm format && pnpm lint"
+  },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "tailwindcss": "4.0.0"

@@ -6,6 +6,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "format": "biome format --write .",
+    "lint": "biome lint --write . && eslint --fix",
+    "quolity": "pnpm format && pnpm lint"
+  },
   "devDependencies": {
     "@tsconfig/strictest": "2.0.5"
   }

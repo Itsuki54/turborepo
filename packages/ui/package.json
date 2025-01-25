@@ -15,9 +15,9 @@
     "type-check": "tsc --noEmit",
     "gen:ui": "pnpm dlx shadcn@latest add ",
     "format": "biome format --write .",
-    "lint": "biome lint --write . && biome lint .",
-    "check": "biome check .",
-    "test": "vitest",
+    "lint": "biome lint --write .",
+    "quolity": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
+    "test": "vitest run",
     "test:cov": "vitest --coverage",
     "test:ui": "vitest --ui"
   },
