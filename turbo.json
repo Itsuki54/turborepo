@@ -12,6 +12,8 @@
     "type-check": {},
     "format": {},
     "check": {},
+    "test": {},
+    "test:cov": {},
     "dev": {
       "cache": false,
       "persistent": true

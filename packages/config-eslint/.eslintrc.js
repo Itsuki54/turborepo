@@ -15,12 +15,13 @@ module.exports = {
     '@next/eslint-plugin-next',
     'prefer-arrow-functions',
     'import',
-     'jsx-a11y'
+    'jsx-a11y',
   ],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@next/next/recommended',
+    'plugin:jsx-a11y/recommended',
   ],
   rules: {
     'react/jsx-sort-props': 'error',
@@ -45,20 +46,25 @@ module.exports = {
         pathGroupsExcludedImportTypes: ['builtin'],
       },
     ],
-    "react/function-component-definition": [
-  2,
-  { "namedComponents": "arrow-function" }
-]
+    'react/function-component-definition': [
+      'error',
+      { namedComponents: 'arrow-function' },
+    ],
   },
-  "overrides": [
+  overrides: [
     {
-      "files": ["./**"],
-      "rules": {
-        "no-var": "off",
-        "no-undef": "off",
-        "@typescript-eslint/no-unused-vars": ["off"],
-        "@typescript-eslint/no-explicit-any": ["off"],
-      }
-    }
-  ]
+      files: ['./**'],
+      rules: {
+        'no-var': 'off',
+        'no-undef': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+      },
+    },
+  ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };

@@ -11,24 +11,20 @@
     "check": "turbo check",
     "gen:ui": "turbo run gen:ui",
     "prepare": "husky",
-    "with-env": "dotenv -e .env --"
+    "with-env": "dotenv -e .env --",
+    "test": "pnpm with-env turbo test",
+    "test:cov": "pnpm with-env turbo test:cov"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@repo/typescript-config": "workspace:*",
     "dotenv-cli": "8.0.0",
     "husky": "9.1.7",
-    "lint-staged": "15.4.1",
+    "lint-staged": "15.4.2",
     "turbo": "2.3.4"
   },
   "packageManager": "pnpm@9.15.4",
   "engines": {
     "node": ">=22"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "turbo format --",
-      "turbo lint --"
-    ]
   }
 }
