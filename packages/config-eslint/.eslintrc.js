@@ -17,6 +17,7 @@ module.exports = {
     'import',
     'jsx-a11y',
     'jsdoc',
+    'eslint-plugin-tsdoc',
   ],
   extends: [
     'eslint:recommended',
@@ -127,6 +128,7 @@ module.exports = {
       },
     ],
     'jsdoc/require-returns': ['off'],
+    'tsdoc/syntax': 'error',
   },
   settings: {
     react: {
