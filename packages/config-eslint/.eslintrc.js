@@ -50,6 +50,7 @@ module.exports = {
       'error',
       { namedComponents: 'arrow-function' },
     ],
+    'import/newline-after-import': 'error',
   },
   overrides: [
     {
