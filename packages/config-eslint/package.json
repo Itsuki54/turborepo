@@ -7,7 +7,7 @@
   },
   "scripts": {
     "format": "biome format --write .",
-    "lint": "biome lint --write . && eslint --fix",
+    "lint": "biome lint --write . && eslint --fix .",
     "quality": "pnpm format && pnpm lint"
   },
   "devDependencies": {
@@ -15,14 +15,16 @@
     "@repo/typescript-config": "workspace:*",
     "eslint": "^8.57.1",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsdoc": "^50.6.3",
     "eslint-plugin-react": "^7.37.4",
     "globals": "^15.14.0",
     "jiti": "^2.4.2",
+    "react": "^19.0.0",
     "typescript": "5.7.3",
     "typescript-eslint": "^8.21.0"
   },
   "dependencies": {
     "@next/eslint-plugin-next": "^15.1.6",
-    "eslint-plugin-prefer-arrow-functions": "^3.6.2"
+    "eslint-plugin-prefer-arrow-functions": "^3.0.0"
   }
 }
