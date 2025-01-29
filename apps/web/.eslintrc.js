@@ -1,5 +1,3 @@
 module.exports = {
-  extends: [
-    require.resolve('@repo/eslint')
-  ],
+  extends: [require.resolve('@repo/eslint')],
 };
