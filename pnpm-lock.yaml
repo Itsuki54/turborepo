@@ -113,8 +113,8 @@ importers:
         specifier: 8.5.1
         version: 8.5.1
       tailwindcss:
-        specifier: 4.0.0
-        version: 4.0.0
+        specifier: 4.0.1
+        version: 4.0.1
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -131,8 +131,8 @@ importers:
         specifier: workspace:*
         version: link:../config-typescript
       tailwindcss:
-        specifier: 4.0.0
-        version: 4.0.0
+        specifier: 4.0.1
+        version: 4.0.1
 
   packages/config-typescript:
     devDependencies:
@@ -208,7 +208,7 @@ importers:
         version: 2.6.0
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@4.0.0)
+        version: 1.0.7(tailwindcss@4.0.1)
     devDependencies:
       '@repo/tailwind-config':
         specifier: workspace:*
@@ -250,8 +250,8 @@ importers:
         specifier: 8.5.1
         version: 8.5.1
       tailwindcss:
-        specifier: 4.0.0
-        version: 4.0.0
+        specifier: 4.0.1
+        version: 4.0.1
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -3258,8 +3258,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  tailwindcss@4.0.0:
-    resolution: {integrity: sha512-ULRPI3A+e39T7pSaf1xoi58AqqJxVCLg8F/uM5A3FadUbnyDTgltVnXJvdkTjwCOGA6NazqHVcwPJC5h2vRYVQ==}
+  tailwindcss@4.0.1:
+    resolution: {integrity: sha512-UK5Biiit/e+r3i0O223bisoS5+y7ZT1PM8Ojn0MxRHzXN1VPZ2KY6Lo6fhu1dOfCfyUAlK7Lt6wSxowRabATBw==}
 
   tar-fs@2.1.1:
     resolution: {integrity: sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng==}
@@ -6537,9 +6537,9 @@ snapshots:
 
   tailwind-merge@2.6.0: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@4.0.0):
+  tailwindcss-animate@1.0.7(tailwindcss@4.0.1):
     dependencies:
-      tailwindcss: 4.0.0
+      tailwindcss: 4.0.1
 
   tailwindcss@3.4.17:
     dependencies:
@@ -6568,7 +6568,7 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  tailwindcss@4.0.0: {}
+  tailwindcss@4.0.1: {}
 
   tar-fs@2.1.1:
     dependencies:
