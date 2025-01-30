@@ -67,14 +67,3 @@ erDiagram
   Report ||--o{ Thread : has
   Service ||--o{ Action : has
 ```
-
-### issue list
-- [ ] モデルの作成
-  - [ ] PrismaのSchemaを作成
-  - [ ] zodのバリデーションを自動生成
-- [ ] モックデータの作成
-  - [ ] モックデータを作成
-  - [ ] seedコマンドを作成
-- [ ] APIの作成
-  - [ ] CRUDのエンドポイントを作成
-  - [ ] テストを書く
