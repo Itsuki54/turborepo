@@ -54,6 +54,7 @@ module.exports = {
   },
   overrides: [
     {
+      //Biomeとかぶっているため、一旦無効化
       files: ['./**'],
       rules: {
         'no-var': 'off',
