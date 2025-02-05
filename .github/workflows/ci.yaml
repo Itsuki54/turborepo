@@ -17,7 +17,7 @@ jobs:
           node-version: '22'
 
       - name: setup pnpm
-        run: corepack enable
+        run: npm install --global corepack@latest
 
       - name: Install dependencies
         run: pnpm install
