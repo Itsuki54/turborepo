@@ -8,7 +8,7 @@
   "types": "vitest/globals",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "lint": "biome lint --write . && biome lint .",
+    "lint": "biome lint --write .",
     "format": "biome format --write .",
     "check": "biome check .",
     "test": "vitest",
