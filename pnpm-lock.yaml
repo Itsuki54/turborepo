@@ -220,8 +220,8 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
       zod-prisma-types:
-        specifier: 3.2.1
-        version: 3.2.1(@prisma/client@6.3.0(prisma@6.3.0(typescript@5.7.3))(typescript@5.7.3))(prisma@6.3.0(typescript@5.7.3))
+        specifier: 3.2.3
+        version: 3.2.3(@prisma/client@6.3.0(prisma@6.3.0(typescript@5.7.3))(typescript@5.7.3))(prisma@6.3.0(typescript@5.7.3))
 
   packages/ui:
     dependencies:
@@ -1100,6 +1100,9 @@ packages:
   '@prisma/debug@6.3.0':
     resolution: {integrity: sha512-m1lQv//0Rc5RG8TBpNUuLCxC35Ghi5XfpPmL83Gh04/GICHD2J5H2ndMlaljrUNaQDF9dOxIuFAYP1rE9wkXkg==}
 
+  '@prisma/debug@6.3.1':
+    resolution: {integrity: sha512-RrEBkd+HLZx+ydfmYT0jUj7wjLiS95wfTOSQ+8FQbvb6vHh5AeKfEPt/XUQ5+Buljj8hltEfOslEW57/wQIVeA==}
+
   '@prisma/engines-version@6.3.0-17.acc0b9dd43eb689cbd20c9470515d719db10d0b0':
     resolution: {integrity: sha512-R/ZcMuaWZT2UBmgX3Ko6PAV3f8//ZzsjRIG1eKqp3f2rqEqVtCv+mtzuH2rBPUC9ujJ5kCb9wwpxeyCkLcHVyA==}
 
@@ -1111,6 +1114,9 @@ packages:
 
   '@prisma/generator-helper@6.2.1':
     resolution: {integrity: sha512-7Ws8DCXGan7hhaFMERXYdmhsudvSzEsrTttJEC7ubZJidvyimS12m3xpM+dLTt+NAShJ7Op7PgF+Mal2jf6xfg==}
+
+  '@prisma/generator-helper@6.3.1':
+    resolution: {integrity: sha512-hX2fxjMksyAWAS0OcDi7GVmRUqsZ35ZY3Zla1EfO+uDYW6BY+om8kuKHyKkIvvRcUlTmL+xccl+nJwNToqP/aA==}
 
   '@prisma/get-platform@6.3.0':
     resolution: {integrity: sha512-V8zZ1d0xfyi6FjpNP4AcYuwSpGcdmu35OXWnTPm8IW594PYALzKXHwIa9+o0f+Lo9AecFWrwrwaoYe56UNfTtQ==}
@@ -4554,8 +4560,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod-prisma-types@3.2.1:
-    resolution: {integrity: sha512-qsOD8aMVx3Yg9gHctvhTRpavaJizt8xUda6qjwOcH7suvrirXax38tjs0ilKcY7GKbyY57q2rZ+uoSDnzVXpag==}
+  zod-prisma-types@3.2.3:
+    resolution: {integrity: sha512-8JIok58ClsQo2/N8/+VPwmFzOjOX+t9cCVgoHAlRVitxezxoqT78DaQAD5xuN7jHYci+ypXonLrgezl8LapmJw==}
     hasBin: true
     peerDependencies:
       '@prisma/client': ^4.x.x || ^5.x.x || ^6.x.x
@@ -5188,6 +5194,8 @@ snapshots:
 
   '@prisma/debug@6.3.0': {}
 
+  '@prisma/debug@6.3.1': {}
+
   '@prisma/engines-version@6.3.0-17.acc0b9dd43eb689cbd20c9470515d719db10d0b0': {}
 
   '@prisma/engines@6.3.0':
@@ -5206,6 +5214,10 @@ snapshots:
   '@prisma/generator-helper@6.2.1':
     dependencies:
       '@prisma/debug': 6.2.1
+
+  '@prisma/generator-helper@6.3.1':
+    dependencies:
+      '@prisma/debug': 6.3.1
 
   '@prisma/get-platform@6.3.0':
     dependencies:
@@ -9052,10 +9064,10 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-prisma-types@3.2.1(@prisma/client@6.3.0(prisma@6.3.0(typescript@5.7.3))(typescript@5.7.3))(prisma@6.3.0(typescript@5.7.3)):
+  zod-prisma-types@3.2.3(@prisma/client@6.3.0(prisma@6.3.0(typescript@5.7.3))(typescript@5.7.3))(prisma@6.3.0(typescript@5.7.3)):
     dependencies:
       '@prisma/client': 6.3.0(prisma@6.3.0(typescript@5.7.3))(typescript@5.7.3)
-      '@prisma/generator-helper': 6.2.1
+      '@prisma/generator-helper': 6.3.1
       code-block-writer: 12.0.0
       lodash: 4.17.21
       prisma: 6.3.0(typescript@5.7.3)
