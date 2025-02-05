@@ -1,6 +1,11 @@
 import { client } from '@repo/api/src/lib/hono';
 import { Button } from '@repo/ui/button';
 
+/**
+ * Page component that displays a heading and a button.
+ *
+ * @param text - The text to display in the heading.
+ */
 const Page = ({
   text,
 }: {
@@ -19,9 +24,16 @@ const Page = ({
   );
 };
 
+/**
+ * Fetches data from the server to be used as props.
+ *
+ * @returns The props for the component.
+ */
 export const getServerSideProps = async () => {
   const res = await client.api.$get('/');
+
   const data = await res.json();
+
   const text = data.text;
   return {
     props: {
