@@ -54,7 +54,7 @@ module.exports = {
   },
   overrides: [
     {
-      // Disable in ESLint because of duplication with Biome.      
+      // Disable in ESLint because of duplication with Biome.
       files: ['./**'],
       rules: {
         'no-var': 'off',
