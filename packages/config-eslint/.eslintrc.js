@@ -23,10 +23,12 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@next/next/recommended',
+    'plugin:jsx-a11y/recommended',
     'plugin:jsdoc/recommended-typescript-error',
   ],
   rules: {
     'react/jsx-sort-props': 'error',
+    'import/newline-after-import': 'error',
     'import/order': [
       'error',
       {
@@ -49,7 +51,7 @@ module.exports = {
       },
     ],
     'react/function-component-definition': [
-      2,
+      'error',
       { namedComponents: 'arrow-function' },
     ],
     'jsdoc/check-param-names': [
