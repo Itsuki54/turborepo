@@ -110,10 +110,10 @@ importers:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.5.1)
       globals:
-        specifier: ^15.14.0
+        specifier: 15.14.0
         version: 15.14.0
       happy-dom:
-        specifier: ^16.7.3
+        specifier: 16.7.3
         version: 16.7.3
       postcss:
         specifier: 8.5.1
@@ -141,34 +141,34 @@ importers:
         version: 3.6.2(eslint@8.57.1)(typescript@5.7.3)
     devDependencies:
       '@eslint/js':
-        specifier: ^8.18.0
+        specifier: 8.57.1
         version: 8.57.1
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../config-typescript
       eslint:
-        specifier: ^8.57.1
+        specifier: 8.57.1
         version: 8.57.1
       eslint-plugin-import:
-        specifier: ^2.31.0
+        specifier: 2.31.0
         version: 2.31.0(@typescript-eslint/parser@8.21.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)
       eslint-plugin-jsx-a11y:
-        specifier: ^6.10.2
+        specifier: 6.10.2
         version: 6.10.2(eslint@8.57.1)
       eslint-plugin-react:
-        specifier: ^7.37.4
+        specifier: 7.37.4
         version: 7.37.4(eslint@8.57.1)
       globals:
-        specifier: ^15.14.0
+        specifier: 15.14.0
         version: 15.14.0
       jiti:
-        specifier: ^2.4.2
+        specifier: 2.4.2
         version: 2.4.2
       typescript:
         specifier: 5.7.3
         version: 5.7.3
       typescript-eslint:
-        specifier: ^8.21.0
+        specifier: 8.21.0
         version: 8.21.0(eslint@8.57.1)(typescript@5.7.3)
 
   packages/config-tailwind:
@@ -2929,10 +2929,6 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
-  import-fresh@3.3.0:
-    resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
-    engines: {node: '>=6'}
-
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
@@ -4922,7 +4918,7 @@ snapshots:
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.2
-      import-fresh: 3.3.0
+      import-fresh: 3.3.1
       js-yaml: 4.1.0
       minimatch: 3.1.2
       strip-json-comments: 3.1.1
@@ -7069,7 +7065,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.3.4
+      debug: 4.4.0
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -7311,11 +7307,6 @@ snapshots:
   ieee754@1.2.1: {}
 
   ignore@5.3.2: {}
-
-  import-fresh@3.3.0:
-    dependencies:
-      parent-module: 1.0.1
-      resolve-from: 4.0.0
 
   import-fresh@3.3.1:
     dependencies:
