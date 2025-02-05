@@ -1,10 +1,19 @@
 ### issue list
 - [ ] モデルの作成
   - [ ] PrismaのSchemaを作成
-  - [ ] zodのバリデーションを自動生成
+    - [ ] packages/database/prisma/schema.prismaにモデルを記述
+    - [ ] `pnpm db:migrate:dev`でマイグレーションを実行
+    - [ ] `pnpm db:generate`でPrisma Client・zodのschemaを生成
 - [ ] モックデータの作成
   - [ ] モックデータを作成
+    - [ ] `packages/database/src/data/`にモックデータを作成(例: `user.ts`)
+    - [ ] `packages/database/src/data/index.ts`にモックデータをre export
   - [ ] seedコマンドを作成
+    - [ ] `packages/database/prisma/seed.ts`にモックデータを読み込む処理を記述
+    - [ ] `pnpm db:seed`でモックデータをDBに追加
+    - [ ] `pnpm studio`でデータを確認
 - [ ] APIの作成
   - [ ] CRUDのエンドポイントを作成
+    - [ ] `apps/**/src/api/**/route.ts`にエンドポイントを作成
+    - [ ] CRUDの処理を記述(この時、`packages/schema`にあるzodのスキーマを使用)
   - [ ] テストを書く
