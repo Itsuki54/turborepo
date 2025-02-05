@@ -11,16 +11,16 @@
     "check": "biome check ."
   },
   "devDependencies": {
-    "@eslint/js": "^8.18.0",
+    "@eslint/js": "8.57.1",
     "@repo/typescript-config": "workspace:*",
-    "eslint": "^8.57.1",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.4",
-    "globals": "^15.14.0",
-    "jiti": "^2.4.2",
+    "eslint": "8.57.1",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.4",
+    "globals": "15.14.0",
+    "jiti": "2.4.2",
     "typescript": "5.7.3",
-    "typescript-eslint": "^8.21.0"
+    "typescript-eslint": "8.21.0"
   },
   "dependencies": {
     "@next/eslint-plugin-next": "^15.1.6",
