@@ -22,5 +22,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run check
-        run: pnpm check
+      - name: Run quality checks
+        run: pnpm quality

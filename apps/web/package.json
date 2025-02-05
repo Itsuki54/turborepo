@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --noEmit",
-    "lint": "biome lint . && eslint .",
+    "lint": "biome lint --write . && eslint --fix",
     "format": "biome format --write .",
-    "check": "biome check .",
-    "test": "vitest",
+    "quality": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
+    "test": "vitest run",
     "test:cov": "vitest --coverage",
     "test:ui": "vitest --ui"
   },

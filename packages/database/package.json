@@ -12,7 +12,8 @@
     "dev": "tsup src/* --watch",
     "format": "prisma format && biome format --write .",
     "db:generate": "prisma generate",
-    "lint": "biome lint --write . && biome lint .",
+    "lint": "biome lint --write .",
+    "quality": "pnpm format && pnpm lint",
     "studio": "prisma studio"
   },
   "devDependencies": {
