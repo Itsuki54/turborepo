@@ -21,6 +21,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@next/next/recommended',
+    'plugin:jsx-a11y/recommended',
   ],
   rules: {
     'react/jsx-sort-props': 'error',
@@ -46,20 +47,26 @@ module.exports = {
       },
     ],
     'react/function-component-definition': [
-      2,
+      'error',
       { namedComponents: 'arrow-function' },
     ],
+    'import/newline-after-import': 'error',
   },
-
   overrides: [
     {
+      // Disable in ESLint because of duplication with Biome.
       files: ['./**'],
       rules: {
         'no-var': 'off',
         'no-undef': 'off',
-        '@typescript-eslint/no-unused-vars': ['off'],
-        '@typescript-eslint/no-explicit-any': ['off'],
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
       },
     },
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };
