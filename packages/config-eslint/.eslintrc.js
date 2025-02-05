@@ -54,7 +54,7 @@ module.exports = {
   },
   overrides: [
     {
-      //Biomeとかぶっているため、一旦無効化
+      // Disable in ESLint because of duplication with Biome.      
       files: ['./**'],
       rules: {
         'no-var': 'off',
