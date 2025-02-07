@@ -5,6 +5,13 @@ type Data = {
   name: string;
 };
 
+/**
+ * Handles the API request and sends a JSON response with a name.
+ *
+ * @param _req - The incoming API request object.
+ *
+ * @param res - The outgoing API response object.
+ */
 export default function handler(
   _req: NextApiRequest,
   res: NextApiResponse<Data>,

@@ -1,5 +1,8 @@
 import Link from 'next/link';
 
+/**
+ * This is the test page component.
+ */
 const TestPage = () => {
   return (
     <div>

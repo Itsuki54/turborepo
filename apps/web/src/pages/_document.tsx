@@ -1,5 +1,8 @@
 import { Head, Html, Main, NextScript } from 'next/document';
 
+/**
+ * Custom Document component for Next.js
+ */
 const Document = () => {
   return (
     <Html lang='en'>
