@@ -6,7 +6,7 @@
     ".": "./tailwind.config.ts"
   },
   "scripts": {
-    "format": "biome format --write .",
+    "format": "biome format --write . && pnpm sort-package-json ./package.json",
     "lint": "biome lint --write . && eslint --fix",
     "quality": "pnpm format && pnpm lint"
   },
