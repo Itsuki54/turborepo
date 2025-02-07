@@ -68,7 +68,7 @@ importers:
         version: link:../../packages/ui
       next:
         specifier: ^15.0.0
-        version: 15.1.6(@opentelemetry/api@1.4.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 15.1.6(@babel/core@7.26.0)(@opentelemetry/api@1.4.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -122,8 +122,8 @@ importers:
         specifier: 8.5.1
         version: 8.5.1
       tailwindcss:
-        specifier: 4.0.3
-        version: 4.0.3
+        specifier: 3.4.17
+        version: 3.4.17
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -189,8 +189,8 @@ importers:
         specifier: workspace:*
         version: link:../config-typescript
       tailwindcss:
-        specifier: 4.0.3
-        version: 4.0.3
+        specifier: 3.4.17
+        version: 3.4.17
 
   packages/config-typescript:
     devDependencies:
@@ -266,7 +266,7 @@ importers:
         version: 3.0.1
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@4.0.3)
+        version: 1.0.7(tailwindcss@3.4.17)
     devDependencies:
       '@repo/tailwind-config':
         specifier: workspace:*
@@ -311,8 +311,8 @@ importers:
         specifier: 8.5.1
         version: 8.5.1
       tailwindcss:
-        specifier: 4.0.3
-        version: 4.0.3
+        specifier: 3.4.17
+        version: 3.4.17
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -8096,7 +8096,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@15.1.6(@opentelemetry/api@1.4.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  next@15.1.6(@babel/core@7.26.0)(@opentelemetry/api@1.4.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       '@next/env': 15.1.6
       '@swc/counter': 0.1.3
@@ -8106,7 +8106,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
-      styled-jsx: 5.1.6(react@19.0.0)
+      styled-jsx: 5.1.6(@babel/core@7.26.0)(react@19.0.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.1.6
       '@next/swc-darwin-x64': 15.1.6
@@ -8879,10 +8879,12 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.6(react@19.0.0):
+  styled-jsx@5.1.6(@babel/core@7.26.0)(react@19.0.0):
     dependencies:
       client-only: 0.0.1
       react: 19.0.0
+    optionalDependencies:
+      '@babel/core': 7.26.0
 
   stylis@4.3.5: {}
 
@@ -8909,9 +8911,9 @@ snapshots:
 
   tailwind-merge@3.0.1: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@4.0.3):
+  tailwindcss-animate@1.0.7(tailwindcss@3.4.17):
     dependencies:
-      tailwindcss: 4.0.3
+      tailwindcss: 3.4.17
 
   tailwindcss@3.4.17:
     dependencies:
