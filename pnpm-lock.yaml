@@ -13,7 +13,7 @@ importers:
         version: 1.9.4
       '@repo/typescript-config':
         specifier: workspace:*
-        version: link:packages/config-typescript
+        version: link:config/typescript
       dotenv-cli:
         specifier: 8.0.0
         version: 8.0.0
@@ -76,15 +76,15 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
-      '@repo/eslint':
+      '@repo/eslint-config':
         specifier: workspace:*
-        version: link:../../packages/config-eslint
+        version: link:../../config/eslint
       '@repo/tailwind-config':
         specifier: workspace:*
-        version: link:../../packages/config-tailwind
+        version: link:../../config/tailwind
       '@repo/typescript-config':
         specifier: workspace:*
-        version: link:../../packages/config-typescript
+        version: link:../../config/typescript
       '@testing-library/dom':
         specifier: 10.4.0
         version: 10.4.0
@@ -134,7 +134,7 @@ importers:
         specifier: 3.0.5
         version: 3.0.5(@types/node@22.13.1)(@vitest/ui@3.0.5)(happy-dom@16.8.1)(jiti@2.4.2)(lightningcss@1.29.1)(tsx@4.19.2)(yaml@2.7.0)
 
-  packages/config-eslint:
+  config/eslint:
     dependencies:
       '@next/eslint-plugin-next':
         specifier: ^15.1.6
@@ -148,7 +148,7 @@ importers:
         version: 8.57.1
       '@repo/typescript-config':
         specifier: workspace:*
-        version: link:../config-typescript
+        version: link:../typescript
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -183,16 +183,16 @@ importers:
         specifier: 8.21.0
         version: 8.21.0(eslint@8.57.1)(typescript@5.7.3)
 
-  packages/config-tailwind:
+  config/tailwind:
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
-        version: link:../config-typescript
+        version: link:../typescript
       tailwindcss:
         specifier: 3.4.17
         version: 3.4.17
 
-  packages/config-typescript:
+  config/typescript:
     devDependencies:
       '@tsconfig/strictest':
         specifier: 2.0.5
@@ -212,7 +212,7 @@ importers:
         version: 9.4.0
       '@repo/typescript-config':
         specifier: workspace:*
-        version: link:../config-typescript
+        version: link:../../config/typescript
       '@types/node':
         specifier: 22.13.1
         version: 22.13.1
@@ -270,10 +270,10 @@ importers:
     devDependencies:
       '@repo/tailwind-config':
         specifier: workspace:*
-        version: link:../config-tailwind
+        version: link:../../config/tailwind
       '@repo/typescript-config':
         specifier: workspace:*
-        version: link:../config-typescript
+        version: link:../../config/typescript
       '@tailwindcss/postcss':
         specifier: ^4.0.3
         version: 4.0.3
