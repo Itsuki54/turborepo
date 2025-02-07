@@ -1,0 +1,12 @@
+pre-commit:
+  parallel: true
+  commands:
+    pnpm:
+      glob: "{**/*.ts,**/*.tsx}"
+      run: pnpm run quality
+
+post-merge:
+  commands:
+    pnpm:
+      glob: "{package.json,pnpm-lock.yaml}"
+      run: pnpm install
