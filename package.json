@@ -21,6 +21,7 @@
     "dotenv-cli": "8.0.0",
     "lefthook": "^1.10.10",
     "lint-staged": "15.4.3",
+    "sort-package-json": "^2.14.0",
     "turbo": "2.4.0"
   },
   "packageManager": "pnpm@9.15.5",

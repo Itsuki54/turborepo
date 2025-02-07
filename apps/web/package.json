@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "type-check": "tsc --noEmit",
+    "dev": "next dev",
+    "format": "biome format --write . && pnpm sort-package-json ./package.json",
     "lint": "biome lint --write . && eslint --fix .",
-    "format": "biome format --write .",
     "quality": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
+    "start": "next start",
     "test": "vitest run",
     "test:cov": "vitest --coverage",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@repo/api": "workspace:*",
