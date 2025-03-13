@@ -5,8 +5,8 @@ import { db } from '@repo/database';
 
 const app = new Hono().basePath('/api');
 
-export const route = app.get('/', (c) => {
-  const users = db.user.findMany();
+export const route = app.get('/', async (c) => {
+  const users = await db.user.findMany();
   return c.json({ text: 'Hello, World!', users });
 });
 
