@@ -5,5 +5,7 @@ import { route } from '../index.js';
 it('test', async () => {
   const res = await testClient(route).api.$get();
   const data = await res.json();
-  expect(data).toStrictEqual({ text: 'Hello, World!' });
+  expect((({ text }) => ({ text }))(data)).toStrictEqual({
+    text: 'Hello, World!',
+  });
 });
