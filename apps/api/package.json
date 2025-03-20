@@ -3,10 +3,13 @@
   "type": "module",
   "types": "vitest/globals",
   "scripts": {
+    "db:migrate:dev": "prisma migrate dev",
+    "db:seed": "tsx src/seed.ts",
     "dev": "tsx watch src/index.ts",
     "format": "biome format --write . && pnpm sort-package-json ./package.json",
     "lint": "biome lint --write .",
     "quality": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
+    "setup": "prisma migrate reset --force && prisma migrate dev --name init && pnpm db:seed",
     "test": "vitest run",
     "test:cov": "vitest --coverage",
     "test:ui": "vitest --ui",
@@ -14,16 +17,23 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
-    "hono": "^4.6.16"
+    "@prisma/client": "6.3.0",
+    "hono": "^4.6.16",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "9.4.0",
     "@types/node": "22.13.1",
     "@vitest/coverage-v8": "3.0.5",
     "@vitest/ui": "3.0.5",
+    "prisma": "6.3.0",
+    "prisma-erd-generator": "2.0.4",
+    "tsup": "8.3.6",
     "tsx": "4.19.2",
     "typescript": "5.7.3",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.0.5"
+    "vitest": "3.0.5",
+    "zod-prisma-types": "3.2.1"
   },
   "export": {
     "./src/lib/hono": "./src/lib/hono.ts",
