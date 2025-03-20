@@ -1,11 +1,13 @@
 import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
 import { handle } from 'hono/vercel';
+import { db } from './client.js';
 
 const app = new Hono().basePath('/api');
 
-export const route = app.get('/', (c) => {
-  return c.json({ text: 'Hello, World!' });
+export const route = app.get('/', async (c) => {
+  const users = await db.user.findMany();
+  return c.json({ text: 'Hello, World!', users });
 });
 
 const port = 4000;
