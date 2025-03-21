@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { db } from './client';
+import { db } from './client.js';
 
 async function main() {
   // biome-ignore lint/suspicious/noConsole: <explanation>

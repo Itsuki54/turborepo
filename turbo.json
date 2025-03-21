@@ -14,6 +14,7 @@
     "quality": {},
     "test": {},
     "test:cov": {},
+    "setup": {},
     "dev": {
       "cache": false,
       "persistent": true

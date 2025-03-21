@@ -4,6 +4,7 @@
   "scripts": {
     "prepare": "lefthook install",
     "build": "pnpm with-env turbo build",
+    "setup": "pnpm with-env turbo setup",
     "dev": "pnpm with-env turbo dev",
     "lint": "turbo lint",
     "type-check": "turbo type-check",

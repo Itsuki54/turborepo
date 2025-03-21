@@ -9,7 +9,7 @@ datasource db {
 
 generator erd {
   provider = "prisma-erd-generator"
-  output   = "./docs/erd.svg"
+  output   = "./docs/erd.md"
 }
 
 generator zod {
