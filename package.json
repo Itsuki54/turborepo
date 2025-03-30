@@ -14,7 +14,8 @@
     "gen:ui": "turbo run gen:ui",
     "with-env": "dotenv -e .env --",
     "test": "pnpm with-env turbo test",
-    "test:cov": "pnpm with-env turbo test:cov"
+    "test:cov": "pnpm with-env turbo test:cov",
+    "lint:ls": "pnpm ls-lint -config .ls-lint.yaml"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
@@ -22,6 +23,7 @@
     "dotenv-cli": "8.0.0",
     "lefthook": "^1.10.10",
     "lint-staged": "15.4.3",
+    "@ls-lint/ls-lint": "^2.3.0",
     "sort-package-json": "^2.14.0",
     "turbo": "2.4.0"
   },
