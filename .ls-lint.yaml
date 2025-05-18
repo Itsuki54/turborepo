@@ -3,6 +3,7 @@ ls:
   .ts:  kebab-case | regex:^_[a-z-.]*$ | regex:^\.[a-z-_]*$
   .tsx: kebab-case | regex:^\[\w*\]$
   .js:  kebab-case
+  .jsx: kebab-case
 ignore:
   - "node_modules"
   - "**/node_modules"
