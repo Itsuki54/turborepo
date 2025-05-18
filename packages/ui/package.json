@@ -32,8 +32,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@repo/tailwind-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@config/tailwind-config": "workspace:*",
+    "@config/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4.0.3",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",

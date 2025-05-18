@@ -1,6 +1,6 @@
 // tailwind config is required for editor support
 
-import sharedConfig from '@repo/tailwind-config';
+import sharedConfig from '@config/tailwind-config';
 
 import type { Config } from 'tailwindcss';
 
