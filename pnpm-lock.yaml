@@ -11,6 +11,9 @@ importers:
       '@biomejs/biome':
         specifier: 1.9.4
         version: 1.9.4
+      '@ls-lint/ls-lint':
+        specifier: ^2.3.0
+        version: 2.3.0
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:config/typescript
@@ -996,6 +999,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@ls-lint/ls-lint@2.3.0':
+    resolution: {integrity: sha512-lsT5/7SxtImOIjpefC9wcoXt2lkikKhCjd6U+Q9Z6X5h2HBU/71ggt+XStdodZ0HkJGO333zDUeec7JROMCPFw==}
+    os: [darwin, linux, win32]
+    hasBin: true
 
   '@mermaid-js/mermaid-cli@11.4.2':
     resolution: {integrity: sha512-nBsEW1AxHsjsjTBrqFInkh91Vvb5vNPmnN7UGWkutExcQQZev6XzMlEZp0i6HYFSoGTHZT2tOT0l/KLzvDyPfg==}
@@ -5384,6 +5392,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@ls-lint/ls-lint@2.3.0': {}
 
   '@mermaid-js/mermaid-cli@11.4.2(puppeteer@19.11.1(typescript@5.7.3))(typescript@5.7.3)':
     dependencies:

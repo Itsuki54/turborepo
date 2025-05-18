@@ -1,0 +1,13 @@
+ls:
+  .dir: kebab-case | regex:^_[a-z-.]*$ | regex:^\.[a-z-_]*$ | regex:^\[\w*\]$ | regex:^__\w+__$
+  .ts:  kebab-case | regex:^_[a-z-.]*$ | regex:^\.[a-z-_]*$
+  .tsx: kebab-case | regex:^\[\w*\]$
+  .js:  kebab-case
+  .jsx: kebab-case
+ignore:
+  - "node_modules"
+  - "**/node_modules"
+  - "**/dist"
+  - "**/build"
+  - "**/coverage"
+  - "**/migrations"
