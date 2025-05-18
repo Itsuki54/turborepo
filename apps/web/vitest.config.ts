@@ -15,6 +15,7 @@ export default defineConfig({
       'src/**/*.test.ts',
     ],
     coverage: {
+      provider: 'v8',
       reporter: ['html'],
       reportsDirectory: './coverage',
     },

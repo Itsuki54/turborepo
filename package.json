@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@repo/typescript-config": "workspace:*",
+    "@config/typescript-config": "workspace:*",
     "dotenv-cli": "8.0.0",
     "lefthook": "^1.10.10",
     "lint-staged": "15.4.3",

@@ -10,7 +10,7 @@
     "quality": "pnpm format && pnpm lint && pnpm type-check && pnpm test",
     "start": "next start",
     "test": "vitest run",
-    "test:cov": "vitest --coverage",
+    "test:cov": "vitest run --coverage",
     "test:ui": "vitest --ui",
     "type-check": "tsc --noEmit"
   },
@@ -22,9 +22,9 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/tailwind-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@config/eslint-config": "workspace:*",
+    "@config/tailwind-config": "workspace:*",
+    "@config/typescript-config": "workspace:*",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.2.0",
     "@types/node": "22.13.1",
