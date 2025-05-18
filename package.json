@@ -15,7 +15,7 @@
     "with-env": "dotenv -e .env --",
     "test": "pnpm with-env turbo test",
     "test:cov": "pnpm with-env turbo test:cov",
-    "lint:ls": "pnpm ls-lint -config .ls-lint.yaml"
+    "lint:ls": "pnpm ls-lint --config .ls-lint.yaml"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
